@@ -1,0 +1,155 @@
+export const riskAreas = [
+  {
+    id: "brampton",
+    area: "Brampton",
+    region: "Peel Region",
+    riskLevel: "Critical",
+    riskScore: 92,
+    customersAtRisk: 12500,
+    recommendedCrews: 2,
+    estimatedRestorationImpact: "High",
+    weather: {
+      condition: "Severe thunderstorm",
+      windSpeed: "74 km/h",
+      temperature: "28 C",
+      rainfall: "35 mm",
+    },
+    causes: [
+      "High wind speed",
+      "Dense tree canopy near overhead lines",
+      "Flood-prone roads",
+      "Past outage history",
+    ],
+    recommendedActions: [
+      "Pre-position 2 repair crews near Brampton before 6 PM",
+      "Send early outage warning to customers",
+      "Prepare backup transformers and field equipment",
+      "Prioritize areas near schools and emergency facilities",
+    ],
+    alertMessage:
+      "Critical outage risk expected in Brampton between 6 PM and 10 PM due to severe wind, tree exposure, and flood risk. Please charge devices, prepare backup lighting, and monitor utility updates.",
+  },
+  {
+    id: "vaughan",
+    area: "Vaughan",
+    region: "York Region",
+    riskLevel: "High",
+    riskScore: 78,
+    customersAtRisk: 8300,
+    recommendedCrews: 1,
+    estimatedRestorationImpact: "Medium-High",
+    weather: {
+      condition: "High wind warning",
+      windSpeed: "61 km/h",
+      temperature: "27 C",
+      rainfall: "20 mm",
+    },
+    causes: [
+      "Strong wind exposure",
+      "Older infrastructure zone",
+      "Moderate tree coverage",
+      "Previous feeder interruptions",
+    ],
+    recommendedActions: [
+      "Stage 1 repair crew near Vaughan",
+      "Monitor feeder load during storm peak",
+      "Send warning to businesses and residential customers",
+    ],
+    alertMessage:
+      "High outage risk expected in Vaughan tonight due to strong winds and infrastructure vulnerability. Please prepare for possible power interruptions.",
+  },
+  {
+    id: "markham",
+    area: "Markham",
+    region: "York Region",
+    riskLevel: "High",
+    riskScore: 74,
+    customersAtRisk: 7600,
+    recommendedCrews: 1,
+    estimatedRestorationImpact: "Medium",
+    weather: {
+      condition: "Thunderstorm watch",
+      windSpeed: "55 km/h",
+      temperature: "26 C",
+      rainfall: "18 mm",
+    },
+    causes: [
+      "Storm exposure",
+      "Tree canopy near residential streets",
+      "Moderate flood sensitivity",
+    ],
+    recommendedActions: [
+      "Keep one mobile crew on standby",
+      "Send precautionary alert",
+      "Monitor outage reports during storm window",
+    ],
+    alertMessage:
+      "High outage risk expected in Markham due to thunderstorm conditions and vegetation exposure. Please monitor outage updates.",
+  },
+  {
+    id: "toronto",
+    area: "Toronto",
+    region: "City of Toronto",
+    riskLevel: "Medium",
+    riskScore: 56,
+    customersAtRisk: 4200,
+    recommendedCrews: 0,
+    estimatedRestorationImpact: "Medium",
+    weather: {
+      condition: "Heavy rainfall",
+      windSpeed: "38 km/h",
+      temperature: "25 C",
+      rainfall: "27 mm",
+    },
+    causes: [
+      "Heavy rainfall",
+      "Moderate flood exposure",
+      "Dense urban infrastructure",
+    ],
+    recommendedActions: [
+      "Continue monitoring storm updates",
+      "Keep backup crews on standby",
+      "Prepare customer communication if risk increases",
+    ],
+    alertMessage:
+      "Moderate outage risk expected in Toronto due to heavy rainfall. Please monitor utility updates and prepare for possible service interruption.",
+  },
+  {
+    id: "caledon",
+    area: "Caledon",
+    region: "Peel Region",
+    riskLevel: "Critical",
+    riskScore: 88,
+    customersAtRisk: 6100,
+    recommendedCrews: 2,
+    estimatedRestorationImpact: "High",
+    weather: {
+      condition: "High wind and storm risk",
+      windSpeed: "70 km/h",
+      temperature: "24 C",
+      rainfall: "30 mm",
+    },
+    causes: [
+      "Rural overhead lines",
+      "High wind exposure",
+      "Large tree coverage",
+      "Longer crew travel distance",
+    ],
+    recommendedActions: [
+      "Pre-position 2 crews near Caledon",
+      "Prepare vegetation response team",
+      "Notify rural customers early",
+    ],
+    alertMessage:
+      "Critical outage risk expected in Caledon due to high winds and rural overhead line exposure. Please prepare for possible extended interruption.",
+  },
+];
+
+export const futureRoadmap = [
+  "Connect live Environment Canada weather alerts",
+  "Replace mock risk data with real-time ArcGIS FeatureServer data",
+  "Use historical outage records to improve prediction accuracy",
+  "Allow utilities to dispatch crews directly from the dashboard",
+  "Send real SMS/email alerts to customers",
+  "Add machine learning model for outage hotspot prediction",
+];
